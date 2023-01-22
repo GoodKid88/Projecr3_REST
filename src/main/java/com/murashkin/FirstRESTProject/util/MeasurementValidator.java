@@ -15,7 +15,6 @@ public class MeasurementValidator implements Validator {
     public MeasurementValidator(SensorService sensorService) {
         this.sensorService = sensorService;
     }
-
     @Override
     public boolean supports(Class<?> clazz) {
         return Measurement.class.equals(clazz);
