@@ -13,13 +13,13 @@ public class Measurement {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "value")
     @NotNull
-    @Min(message = "Value should be greater than -100", value = -100)
-    @Max(message = "Value should be less than 100", value = 100)
-    private double value;
+    @Min(value = -100)
+    @Max(value = 100)
+    private Double value;
 
     @Column(name = "raining")
     @NotNull
